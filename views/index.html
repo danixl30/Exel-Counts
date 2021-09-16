@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Excel App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Excel Counts App</h1>
+        <form action="/computeFiles" enctype="multipart/form-data" method="post">
+            <div class="form-group">
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Select the base file</label>
+                    <input name="baseFile" class="form-control" type="file" id="formFile">
+                </div>
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Select the final file</label>
+                    <input name="finalFile" class="form-control" type="file" id="formFile">
+                </div>                   
+                <button type="submit" class="btn btn-primary">Do it!</button>         
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
